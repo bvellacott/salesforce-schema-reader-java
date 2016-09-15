@@ -1,4 +1,4 @@
-package kimble.orgdata;
+package org.sf.schemareader;
 
 import java.util.Collections;
 import java.util.HashMap;

@@ -1,10 +1,11 @@
-package kimble.orgdata;
+package org.sf.schemareader;
 
-import static kimble.orgdata.SObjectMetas.deepWalkFields;
-import static kimble.orgdata.SObjectMetas.getDescribeResults;
-import kimble.orgdata.SObjectMetas.SObjectWalkerConfig;
-import kimble.orgdata.SObjectMetas.Visitor;
-import kimble.orgdata.SObjectMetas.WalkReturnCode;
+import static org.sf.schemareader.SObjectMetas.deepWalkFields;
+import static org.sf.schemareader.SObjectMetas.getDescribeResults;
+
+import org.sf.schemareader.SObjectMetas.SObjectWalkerConfig;
+import org.sf.schemareader.SObjectMetas.Visitor;
+import org.sf.schemareader.SObjectMetas.WalkReturnCode;
 
 import com.sforce.soap.partner.DescribeSObjectResult;
 import com.sforce.soap.partner.Field;
@@ -16,9 +17,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        String username = "ben@bvkimblehubdev.com";
-        String password = "RuunasenPallit89OSsdKn1IaqOqkWAQytuEULgR";
-        String authEndPoint = "https://login.salesforce.com/services/Soap/u/25.0";
+        String username = "username";
+        String password = "password";
+        String authEndPoint = "https://login.salesforce.com/services/Soap/u/22.0";
         SObjectWalkerConfig walkerConfig = new SObjectWalkerConfig();
 
         try {

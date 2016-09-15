@@ -1,16 +1,15 @@
-package kimble.orgdata;
+package org.sf.schemareader;
 
-import static kimble.orgdata.SObjectMetas.*;
-import static kimble.orgdata.Mocks.*;
 import static org.junit.Assert.*;
+import static org.sf.schemareader.Mocks.*;
+import static org.sf.schemareader.SObjectMetas.*;
 
 import java.util.Map;
 
-import kimble.orgdata.SObjectMetas.SObjectWalkerConfig;
-import kimble.orgdata.SObjectMetas.WalkReturnCode;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.sf.schemareader.SObjectMetas.SObjectWalkerConfig;
+import org.sf.schemareader.SObjectMetas.WalkReturnCode;
 
 import com.sforce.soap.partner.DescribeSObjectResult;
 import com.sforce.soap.partner.Field;
