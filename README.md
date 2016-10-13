@@ -2,7 +2,7 @@
 Before using this tool on orgs make sure the orgs comply with the prerequisites stated at:
 https://developer.salesforce.com/docs/atlas.en-us.api_streaming.meta/api_streaming/code_sample_java_prereqs.htm
 
-This tool will help you in reading a salesforce database schema. You can read the entire schema using a visitor. A visitor is a function which takes context information as parameters. Specifically a visitor in this tolo will be given the current field being visited, the object that the field belongs to and the path that was followed to get to that field.
+This tool will help you in reading a salesforce database schema. You can read the entire schema using a visitor. A visitor is a function which takes context information as parameters. Specifically a visitor in this tool will be given the current field being visited, the object that the field belongs to and the path that was followed to get to that field.
 
 The reader takes care of not traversing circular dpendencies i.e. if there is an object called Human with a reference to an object called Pet with a reference back to Human, that would be a circular dependency and if not handled will cause an infinite loop. The reader handles these scenarios simply by keeping track of all the traversed objects and making sure no object gets traversed twice.
 
